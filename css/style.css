@@ -80,14 +80,14 @@ header #itens .item:hover {
     transform: scale(1.1);
 }
 
-#ico-lang {
+#ico-idioma {
     max-height: 1.3rem;
 }
 
 #idioma {
     display: flex;
     min-width: 110px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     transition: transform 0.2s linear;
     cursor: pointer;
@@ -102,6 +102,7 @@ header #itens .item:hover {
     user-select: none;
     color: #ffffff;
     cursor: pointer;
+    padding-left: 5px;
 }
 
 /* Main */

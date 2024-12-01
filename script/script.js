@@ -277,7 +277,7 @@ ptxttrofeu.addEventListener('mouseenter', function activetrofeu() {
 })
 
 let $idioma = document.getElementById('idioma')
-let $icon = document.getElementById('ico-lang')
+let $icon = document.getElementById('ico-idioma')
 let $name = document.getElementById('name-idioma')
 
 $idioma.addEventListener('mouseenter', ()=>{
