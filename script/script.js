@@ -7,16 +7,16 @@ window.onload = function () {
 }
 
 //Txts
-var txts = document.getElementById('txts')
-var foto = document.getElementById('foto')
-foto.addEventListener('mouseenter', blur)
-function blur() {
-    txts.style.filter = 'blur(3px)'
-}
-foto.addEventListener('mouseout', noblur)
-function noblur() {
-    txts.style.filter = 'blur(0)'
-}
+// var txts = document.getElementById('txts')
+// var foto = document.getElementById('foto')
+// foto.addEventListener('mouseenter', blur)
+// function blur() {
+//     txts.style.filter = 'blur(3px)'
+// }
+// foto.addEventListener('mouseout', noblur)
+// function noblur() {
+//     txts.style.filter = 'blur(0)'
+// }
 
 
 //Logo
@@ -171,6 +171,10 @@ pfacul.addEventListener('mouseout', voltafaul)
 facul.addEventListener('mouseenter', mudafacul)
 facul.addEventListener('mouseout', voltafaul)
 
+lfacul.addEventListener('click', (e) => {
+    e.preventDefault()
+})
+
 function mudafacul() {
     facul.src = 'img/outros/capelo2.png'
 }
@@ -195,6 +199,11 @@ local.addEventListener('mouseout', voltalocal)
 var plocal = document.getElementById('plocal')
 plocal.addEventListener('mouseenter', mudalocal)
 plocal.addEventListener('mouseout', voltalocal)
+
+llocal.addEventListener('click', (e) => {
+    e.preventDefault()
+})
+
 function mudalocal() {
     local.src = 'img/outros/local2.png'
 }
@@ -221,6 +230,11 @@ var pgmail = document.getElementById('pgmail')
 pgmail.addEventListener('mouseenter', mudagmail)
 pgmail.addEventListener('mouseout', voltagmail)
 var ptxtgmail = document.getElementById('ptxtgmail')
+
+lgmail.addEventListener('click', (e) => {
+    e.preventDefault()
+})
+
 function mudagmail() {
     gmail.src = 'img/outros/email2.png'
 }
@@ -230,7 +244,7 @@ function voltagmail() {
 }
 
 //Ptxt Gmail
-ptxtgmail.addEventListener('mouseenter', function activegmail(){
+ptxtgmail.addEventListener('mouseenter', function activegmail() {
     gmail.src = 'img/outros/email2.png'
 })
 
@@ -241,9 +255,14 @@ var trofeu = document.getElementById('trofeu')
 ltrofeu.addEventListener('mouseout', voltatrofeu)
 trofeu.addEventListener('mouseenter', mudatrofeu)
 trofeu.addEventListener('mouseout', voltatrofeu)
-var ptrofeu = document.getElementById('ptrofeu') 
+var ptrofeu = document.getElementById('ptrofeu')
 ptrofeu.addEventListener('mouseenter', mudatrofeu)
 ptrofeu.addEventListener('mouseout', voltatrofeu)
+
+ltrofeu.addEventListener('click', (e) => {
+    e.preventDefault()
+})
+
 function mudatrofeu() {
     trofeu.src = 'img/outros/trofeu2.png'
 }
@@ -253,6 +272,33 @@ function voltatrofeu() {
 }
 
 var ptxttrofeu = document.getElementById('ptxttrofeu')
-ptxttrofeu.addEventListener('mouseenter', function activetrofeu(){
+ptxttrofeu.addEventListener('mouseenter', function activetrofeu() {
     trofeu.src = 'img/outros/trofeu2.png'
+})
+
+let $idioma = document.getElementById('idioma')
+let $lang = document.getElementById('lang')
+let $icon = document.getElementById('ico-lang')
+let $name = document.getElementById('name-lang')
+
+$lang.addEventListener('click', () => {
+
+    $lang.classList.add('anima')
+
+    if ($icon.src.includes('brasil.png')) {
+        $icon.src = 'img/lang/estados-unidos.png'
+        $name.innerText = 'English'
+    } else if ($icon.src.includes('estados-unidos.png')) {
+        $icon.src = 'img/lang/franca.png'
+        $name.innerText = 'Français'
+    } else {
+        $icon.src = 'img/lang/brasil.png'
+        $name.innerText = 'Português'
+    }
+
+    setTimeout(() => {
+        $lang.classList.remove('anima')
+
+    }, 200)
+
 })
