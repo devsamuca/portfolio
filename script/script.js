@@ -277,20 +277,60 @@ ptxttrofeu.addEventListener('mouseenter', function activetrofeu() {
 })
 
 let $idioma = document.getElementById('idioma')
-let $lang = document.getElementById('lang')
 let $icon = document.getElementById('ico-lang')
-let $name = document.getElementById('name-lang')
+let $name = document.getElementById('name-idioma')
 
-$lang.addEventListener('click', () => {
+$idioma.addEventListener('mouseenter', ()=>{
 
-    $lang.classList.add('anima')
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/brasil.png'
+        $name.innerText = 'Português'
 
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/franca.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/espanha.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/estados-unidos.png'
+        $name.innerText = 'English'
+    }
+})
+
+$idioma.addEventListener('mouseout', ()=>{
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Português'
+
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'English'
+    }
+})
+
+$idioma.addEventListener('click', () => {
+    
     if ($icon.src.includes('brasil.png')) {
         $icon.src = 'img/lang/estados-unidos.png'
         $name.innerText = 'English'
+
     } else if ($icon.src.includes('estados-unidos.png')) {
         $icon.src = 'img/lang/franca.png'
         $name.innerText = 'Français'
+    } else if ($icon.src.includes('franca.png')) {
+        $icon.src = 'img/lang/espanha.png'
+        $name.innerText = 'Español'
     } else {
         $icon.src = 'img/lang/brasil.png'
         $name.innerText = 'Português'
@@ -301,4 +341,82 @@ $lang.addEventListener('click', () => {
 
     }, 200)
 
+})
+
+$icon.addEventListener('mouseout', ()=>{
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Português'
+
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'English'
+    }
+})
+
+$icon.addEventListener('mouseenter', ()=>{
+
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/brasil.png'
+        $name.innerText = 'Português'
+
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/franca.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/espanha.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/estados-unidos.png'
+        $name.innerText = 'English'
+    }
+})
+
+$name.addEventListener('mouseout', ()=>{
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Português'
+
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/no-mundo-todo.png'
+        $name.innerText = 'English'
+    }
+})
+
+$name.addEventListener('mouseenter', ()=>{
+
+    if ($name.innerText == 'Português') {
+        $icon.src = 'img/lang/brasil.png'
+        $name.innerText = 'Português'
+
+    } else if ($name.innerText == 'Français') {
+        $icon.src = 'img/lang/franca.png'
+        $name.innerText = 'Français'
+
+    } else if ($name.innerText == 'Español') {
+        $icon.src = 'img/lang/espanha.png'
+        $name.innerText = 'Español'
+
+    } else {
+        $icon.src = 'img/lang/estados-unidos.png'
+        $name.innerText = 'English'
+    }
 })
