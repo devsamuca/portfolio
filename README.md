@@ -1,8 +1,1 @@
-Sobre
-
-Tec e Ferramentas
-
-Experiencias
-
-Projetos
-
+🚧EM DESENVOLVIMENTO🚧
