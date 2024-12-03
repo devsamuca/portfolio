@@ -41,6 +41,20 @@ h2:hover {
     cursor: default;
 }
 
+.mudaidioma {
+    animation: mudaidioma 0.2s linear;
+}
+
+@keyframes mudaidioma {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Header */
 header {
     padding: 1rem 2%;
@@ -49,6 +63,11 @@ header {
     align-items: center;
     height: auto;
     background-color: #000000;
+}
+
+#itens{
+    
+
 }
 
 header #logo {

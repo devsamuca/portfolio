@@ -6,19 +6,6 @@ window.onload = function () {
     document.body.style.display = 'block'
 }
 
-//Txts
-// var txts = document.getElementById('txts')
-// var foto = document.getElementById('foto')
-// foto.addEventListener('mouseenter', blur)
-// function blur() {
-//     txts.style.filter = 'blur(3px)'
-// }
-// foto.addEventListener('mouseout', noblur)
-// function noblur() {
-//     txts.style.filter = 'blur(0)'
-// }
-
-
 //Logo
 var logo = document.getElementById('logo');
 logo.addEventListener('mouseenter', mudarLogo);
@@ -280,7 +267,7 @@ let $idioma = document.getElementById('idioma')
 let $icon = document.getElementById('ico-idioma')
 let $name = document.getElementById('name-idioma')
 
-$idioma.addEventListener('mouseenter', ()=>{
+$idioma.addEventListener('mouseenter', () => {
 
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/brasil.png'
@@ -300,7 +287,7 @@ $idioma.addEventListener('mouseenter', ()=>{
     }
 })
 
-$idioma.addEventListener('mouseout', ()=>{
+$idioma.addEventListener('mouseout', () => {
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/no-mundo-todo.png'
         $name.innerText = 'Português'
@@ -320,30 +307,257 @@ $idioma.addEventListener('mouseout', ()=>{
 })
 
 $idioma.addEventListener('click', () => {
-    
+
     if ($icon.src.includes('brasil.png')) {
         $icon.src = 'img/lang/estados-unidos.png'
         $name.innerText = 'English'
 
+        //Idioma en-US
+        document.getElementById('txt1').innerText = 'Hello everyone, I am'
+        document.getElementById('txt1').classList.add('mudaidioma')
+
+        document.getElementById('txt2').innerText = 'SAMUEL SOUZA'
+        document.getElementById('txt2').classList.add('mudaidioma')
+
+        document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
+        document.getElementById('txt3').classList.add('mudaidioma')
+
+        document.getElementById('txt4').innerText = 'I am a passionate technology student, dedicated to learning and growing professionally. I am in the second semester of the Software Engineering course at the University of Philadelphia and I currently work as a Service Desk at the Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').classList.add('mudaidioma')
+
+        document.getElementById('pfacul').innerText = 'Study:'
+        document.getElementById('pfacul').classList.add('mudaidioma')
+
+        document.getElementById('ptxtfacul').innerText = 'Philadelphia University'
+        document.getElementById('ptxtfacul').classList.add('mudaidioma')
+
+
+        document.getElementById('plocal').innerText = 'Location:'
+        document.getElementById('plocal').classList.add('mudaidioma')
+
+        document.getElementById('ptxtlocal').innerText = 'Londrina, BR'
+        document.getElementById('ptxtlocal').classList.add('mudaidioma')
+
+        document.getElementById('pgmail').innerText = 'Email:'
+        document.getElementById('pgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptxtgmail').innerText = 'silva.samueldev@gmail.com'
+        document.getElementById('ptxtgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptrofeu').innerText = 'Interests'
+        document.getElementById('ptrofeu').classList.add('mudaidioma')
+
+        document.getElementById('ptxttrofeu').innerText = 'Boxe | No Gi | MMA'
+        document.getElementById('ptxttrofeu').classList.add('mudaidioma')
+
+        document.getElementById('footertext').innerText = '@Copyright 2024 | Developed by Samuel Souza.'
+        document.getElementById('footertext').classList.add('mudaidioma')
+
+        setTimeout(() => {
+            document.getElementById('txt1').classList.remove('mudaidioma')
+            document.getElementById('txt2').classList.remove('mudaidioma')
+            document.getElementById('txt3').classList.remove('mudaidioma')
+            document.getElementById('txt4').classList.remove('mudaidioma')
+            document.getElementById('pfacul').classList.remove('mudaidioma')
+            document.getElementById('ptxtfacul').classList.remove('mudaidioma')
+            document.getElementById('plocal').classList.remove('mudaidioma')
+            document.getElementById('ptxtlocal').classList.remove('mudaidioma')
+            document.getElementById('pgmail').classList.remove('mudaidioma')
+            document.getElementById('ptxtgmail').classList.remove('mudaidioma')
+            document.getElementById('ptrofeu').classList.remove('mudaidioma')
+            document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
+            document.getElementById('footertext').classList.remove('mudaidioma')
+        }, 2000)
+
     } else if ($icon.src.includes('estados-unidos.png')) {
+
         $icon.src = 'img/lang/franca.png'
         $name.innerText = 'Français'
+
+        //Idioma fr-FR
+        document.getElementById('txt1').innerText = 'Salut à tous, je m`appelle'
+        document.getElementById('txt1').classList.add('mudaidioma')
+
+        document.getElementById('txt2').innerText = 'SAMUEL SOUZA'
+        document.getElementById('txt2').classList.add('mudaidioma')
+
+        document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
+        document.getElementById('txt3').classList.add('mudaidioma')
+
+        document.getElementById('txt4').innerText = 'Je suis un étudiant passionné de technologie, dédié à l`apprentissage et à l`épanouissement professionnel. Je suis au deuxième semestre du cours de génie logiciel à l`Université de Philadelphie et je travaille actuellement comme Service Desk à l`Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').classList.add('mudaidioma')
+
+        document.getElementById('pfacul').innerText = 'Études: '
+        document.getElementById('pfacul').classList.add('mudaidioma')
+
+        document.getElementById('ptxtfacul').innerText = 'Université de Philadelphie'
+        document.getElementById('ptxtfacul').classList.add('mudaidioma')
+
+
+        document.getElementById('plocal').innerText = 'Emplacement:'
+        document.getElementById('plocal').classList.add('mudaidioma')
+
+        document.getElementById('ptxtlocal').innerText = 'Londrina, BR'
+        document.getElementById('ptxtlocal').classList.add('mudaidioma')
+
+        document.getElementById('pgmail').innerText = 'E-mail:'
+        document.getElementById('pgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptxtgmail').innerText = 'silva.samueldev@gmail.com'
+        document.getElementById('ptxtgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptrofeu').innerText = 'Intérêts'
+        document.getElementById('ptrofeu').classList.add('mudaidioma')
+
+        document.getElementById('ptxttrofeu').innerText = 'Boxe | No Gi | MMA'
+        document.getElementById('ptxttrofeu').classList.add('mudaidioma')
+
+        document.getElementById('footertext').innerText = '@Droit d`auteur 2024 | Développé par Samuel Souza.'
+        document.getElementById('footertext').classList.add('mudaidioma')
+
+        setTimeout(() => {
+            document.getElementById('txt1').classList.remove('mudaidioma')
+            document.getElementById('txt2').classList.remove('mudaidioma')
+            document.getElementById('txt3').classList.remove('mudaidioma')
+            document.getElementById('txt4').classList.remove('mudaidioma')
+            document.getElementById('pfacul').classList.remove('mudaidioma')
+            document.getElementById('ptxtfacul').classList.remove('mudaidioma')
+            document.getElementById('plocal').classList.remove('mudaidioma')
+            document.getElementById('ptxtlocal').classList.remove('mudaidioma')
+            document.getElementById('pgmail').classList.remove('mudaidioma')
+            document.getElementById('ptxtgmail').classList.remove('mudaidioma')
+            document.getElementById('ptrofeu').classList.remove('mudaidioma')
+            document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
+            document.getElementById('footertext').classList.remove('mudaidioma')
+        }, 2000)
+
+
     } else if ($icon.src.includes('franca.png')) {
+
         $icon.src = 'img/lang/espanha.png'
         $name.innerText = 'Español'
+
+        //Idioma es-ES
+        document.getElementById('txt1').innerText = 'Hola a todos soy'
+        document.getElementById('txt1').classList.add('mudaidioma')
+
+        document.getElementById('txt2').innerText = 'SAMUEL SOUZA'
+        document.getElementById('txt2').classList.add('mudaidioma')
+
+        document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
+        document.getElementById('txt3').classList.add('mudaidioma')
+
+        document.getElementById('txt4').innerText = 'Soy un estudiante apasionado de tecnología, dedicado a aprender y crecer profesionalmente. Estoy en el segundo semestre del curso de Ingeniería de Software en la Universidad de Filadelfia y actualmente trabajo como Service Desk en la Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').classList.add('mudaidioma')
+
+        document.getElementById('pfacul').innerText = 'Estudios: '
+        document.getElementById('pfacul').classList.add('mudaidioma')
+
+        document.getElementById('ptxtfacul').innerText = 'Universidad de Filadelfia'
+        document.getElementById('ptxtfacul').classList.add('mudaidioma')
+
+
+        document.getElementById('plocal').innerText = 'Ubicación:'
+        document.getElementById('plocal').classList.add('mudaidioma')
+
+        document.getElementById('ptxtlocal').innerText = 'Londrina, BR'
+        document.getElementById('ptxtlocal').classList.add('mudaidioma')
+
+        document.getElementById('pgmail').innerText = 'Correo electrónico:'
+        document.getElementById('pgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptxtgmail').innerText = 'silva.samueldev@gmail.com'
+        document.getElementById('ptxtgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptrofeu').innerText = 'Intereses'
+        document.getElementById('ptrofeu').classList.add('mudaidioma')
+
+        document.getElementById('ptxttrofeu').innerText = 'Boxe | No Gi | MMA'
+        document.getElementById('ptxttrofeu').classList.add('mudaidioma')
+
+        document.getElementById('footertext').innerText = '@Copyright 2024 | Desenvolvido por Samuel Souza.'
+        document.getElementById('footertext').classList.add('mudaidioma')
+
+        setTimeout(() => {
+            document.getElementById('txt1').classList.remove('mudaidioma')
+            document.getElementById('txt2').classList.remove('mudaidioma')
+            document.getElementById('txt3').classList.remove('mudaidioma')
+            document.getElementById('txt4').classList.remove('mudaidioma')
+            document.getElementById('pfacul').classList.remove('mudaidioma')
+            document.getElementById('ptxtfacul').classList.remove('mudaidioma')
+            document.getElementById('plocal').classList.remove('mudaidioma')
+            document.getElementById('ptxtlocal').classList.remove('mudaidioma')
+            document.getElementById('pgmail').classList.remove('mudaidioma')
+            document.getElementById('ptxtgmail').classList.remove('mudaidioma')
+            document.getElementById('ptrofeu').classList.remove('mudaidioma')
+            document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
+            document.getElementById('footertext').classList.remove('mudaidioma')
+        }, 2000)
+
     } else {
         $icon.src = 'img/lang/brasil.png'
         $name.innerText = 'Português'
+
+        //Idioma pt-BR
+        document.getElementById('txt1').innerText = 'Olá, meu nome é'
+        document.getElementById('txt1').classList.add('mudaidioma')
+
+        document.getElementById('txt2').innerText = 'SAMUEL SOUZA'
+        document.getElementById('txt2').classList.add('mudaidioma')
+
+        document.getElementById('txt3').innerText = 'DESENVOLVEDOR FULL STACK JR E SERVICE DESK'
+        document.getElementById('txt3').classList.add('mudaidioma')
+
+        document.getElementById('txt4').innerText = 'Sou um estudante de tecnologia apaixonado, dedicado a aprender e crescer profissionalmente.Estou no segundo semestre do curso de Engenharia de Software da Universidade de Filadélfia e atualmente trabalho como Service Desk na Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').classList.add('mudaidioma')
+
+        document.getElementById('pfacul').innerText = 'Estudos: '
+        document.getElementById('pfacul').classList.add('mudaidioma')
+
+        document.getElementById('ptxtfacul').innerText = 'Universidade Filadelfia'
+        document.getElementById('ptxtfacul').classList.add('mudaidioma')
+
+
+        document.getElementById('plocal').innerText = 'Localização:'
+        document.getElementById('plocal').classList.add('mudaidioma')
+
+        document.getElementById('ptxtlocal').innerText = 'Londrina, BR'
+        document.getElementById('ptxtlocal').classList.add('mudaidioma')
+
+        document.getElementById('pgmail').innerText = 'Email:'
+        document.getElementById('pgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptxtgmail').innerText = 'silva.samueldev@gmail.com'
+        document.getElementById('ptxtgmail').classList.add('mudaidioma')
+
+        document.getElementById('ptrofeu').innerText = 'Interesses'
+        document.getElementById('ptrofeu').classList.add('mudaidioma')
+
+        document.getElementById('ptxttrofeu').innerText = 'Boxe | No Gi | MMA'
+        document.getElementById('ptxttrofeu').classList.add('mudaidioma')
+
+        document.getElementById('footertext').innerText = '@Derechos de autor 2024 | Desenvolvido por Samuel Souza.'
+        document.getElementById('footertext').classList.add('mudaidioma')
+
+        setTimeout(() => {
+            document.getElementById('txt1').classList.remove('mudaidioma')
+            document.getElementById('txt2').classList.remove('mudaidioma')
+            document.getElementById('txt3').classList.remove('mudaidioma')
+            document.getElementById('txt4').classList.remove('mudaidioma')
+            document.getElementById('pfacul').classList.remove('mudaidioma')
+            document.getElementById('ptxtfacul').classList.remove('mudaidioma')
+            document.getElementById('ptxtlocal').classList.remove('mudaidioma')
+            document.getElementById('pgmail').classList.remove('mudaidioma')
+            document.getElementById('ptxtgmail').classList.remove('mudaidioma')
+            document.getElementById('ptrofeu').classList.remove('mudaidioma')
+            document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
+            document.getElementById('footertext').classList.remove('mudaidioma')
+        }, 2000)
+
     }
-
-    setTimeout(() => {
-        $lang.classList.remove('anima')
-
-    }, 200)
-
 })
 
-$icon.addEventListener('mouseout', ()=>{
+$icon.addEventListener('mouseout', () => {
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/no-mundo-todo.png'
         $name.innerText = 'Português'
@@ -362,7 +576,7 @@ $icon.addEventListener('mouseout', ()=>{
     }
 })
 
-$icon.addEventListener('mouseenter', ()=>{
+$icon.addEventListener('mouseenter', () => {
 
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/brasil.png'
@@ -382,7 +596,7 @@ $icon.addEventListener('mouseenter', ()=>{
     }
 })
 
-$name.addEventListener('mouseout', ()=>{
+$name.addEventListener('mouseout', () => {
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/no-mundo-todo.png'
         $name.innerText = 'Português'
@@ -401,7 +615,7 @@ $name.addEventListener('mouseout', ()=>{
     }
 })
 
-$name.addEventListener('mouseenter', ()=>{
+$name.addEventListener('mouseenter', () => {
 
     if ($name.innerText == 'Português') {
         $icon.src = 'img/lang/brasil.png'
