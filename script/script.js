@@ -322,7 +322,7 @@ $idioma.addEventListener('click', () => {
         document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
         document.getElementById('txt3').classList.add('mudaidioma')
 
-        document.getElementById('txt4').innerText = 'I am a passionate technology student, dedicated to learning and growing professionally. I am in the second semester of the Software Engineering course at the University of Philadelphia and I currently work as a Service Desk at the Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').innerText = 'I am a passionate technology student, dedicated to learning and growing professionally. I am in the second year of the Software Engineering course at the University of Philadelphia and currently work as a Service Desk at Irmandade da Santa Casa de Londrina.'
         document.getElementById('txt4').classList.add('mudaidioma')
 
         document.getElementById('pfacul').innerText = 'Study:'
@@ -384,7 +384,7 @@ $idioma.addEventListener('click', () => {
         document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
         document.getElementById('txt3').classList.add('mudaidioma')
 
-        document.getElementById('txt4').innerText = 'Je suis un étudiant passionné de technologie, dédié à l`apprentissage et à l`épanouissement professionnel. Je suis au deuxième semestre du cours de génie logiciel à l`Université de Philadelphie et je travaille actuellement comme Service Desk à l`Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').innerText = 'Je suis un étudiant passionné de technologie, dédié à l`apprentissage et à la croissance professionnelle. Je suis en deuxième année du cours de génie logiciel à l`Université de Philadelphie et je travaille actuellement comme Service Desk à l`Irmandade da Santa Casa de Londrina.'
         document.getElementById('txt4').classList.add('mudaidioma')
 
         document.getElementById('pfacul').innerText = 'Études: '
@@ -447,7 +447,7 @@ $idioma.addEventListener('click', () => {
         document.getElementById('txt3').innerText = 'FULL STACK DEVELOPER JR AND SERVICE DESK'
         document.getElementById('txt3').classList.add('mudaidioma')
 
-        document.getElementById('txt4').innerText = 'Soy un estudiante apasionado de tecnología, dedicado a aprender y crecer profesionalmente. Estoy en el segundo semestre del curso de Ingeniería de Software en la Universidad de Filadelfia y actualmente trabajo como Service Desk en la Irmandade da Santa Casa de Londrina.'
+        document.getElementById('txt4').innerText = 'Soy un estudiante apasionado de la tecnología, dedicado a aprender y crecer profesionalmente. Estoy en el segundo año de la carrera de Ingeniería de Software en la Universidad de Filadelfia y actualmente trabajo como Service Desk en Irmandade da Santa Casa de Londrina.'
         document.getElementById('txt4').classList.add('mudaidioma')
 
         document.getElementById('pfacul').innerText = 'Estudios: '
