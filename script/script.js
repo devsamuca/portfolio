@@ -306,6 +306,16 @@ $idioma.addEventListener('mouseout', () => {
     }
 })
 
+// languages
+let css = document.getElementById('css')
+css.addEventListener('mouseenter', ()=>{
+    document.getElementById('cssicon').src = 'img/language/css.png'
+})
+
+css.addEventListener('mouseout', ()=>{
+    document.getElementById('cssicon').src = 'img/language/cssblack.png'
+})
+
 $idioma.addEventListener('click', () => {
 
     if ($icon.src.includes('brasil.png')) {

@@ -1,14 +1,12 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     user-select: none;
 }
 
@@ -133,7 +131,7 @@ main {
 /*Sec1*/
 #sec1 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: #ffffff;
     padding: 2rem;
@@ -158,40 +156,39 @@ main {
     font-size: 3rem;
 }
 
-#foto {
-    height: auto;
-    max-height: 60rem;
-    border-radius: 1rem;
-    max-width: 100%;
-    margin: 1rem;
-    transition: 0.2s linear;
-}
-
 /* Textos */
 #txts {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
     margin: 0 5rem;
-    flex: 1;
     transition: 0.2s ease;
 }
 
+#txts p,
+h1,
+h2 {
+    text-align: left;
+}
+
 #txt1 {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 #txt2 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
 }
 
 
 #txt3 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
 }
 
 #txt4 {
     width: 100%;
-    max-width: 500px;
     color: gray;
     font-style: italic;
     margin-top: 1rem;
@@ -289,7 +286,6 @@ main {
     cursor: pointer;
 }
 
-
 #rede {
     display: flex;
     justify-content: space-between;
@@ -301,8 +297,8 @@ main {
 
 #sec2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex-direction: column;
     background-color: #ffffff;
     padding: 2rem;
@@ -314,45 +310,90 @@ main {
     transition: transform 0.2s ease, box-shadow 1s ease, background-color 0.2s ease;
 }
 
-#sec2 h1{
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 2rem;
+#sec2 h1 {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0 5rem 2rem 5rem;
 }
 
-#sec2-pt2{
+#sec2-pt2 {
     display: flex;
+    justify-content: left;
+    align-items: left;
     flex-wrap: wrap;
-}
-
-.place-language{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem;
-}
-
-.place-language p{
-    color: #000000;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.icon-language{
-    height: 3.2rem;
-    padding-right: 0.3rem;
-}
-
-/* Icones Languages */
-
-#node{
-    filter: drop-shadow(0 0 0.75rem #47b280);
+    margin: 0;
 }
 
 #sec2:hover {
     box-shadow: 0 1px 15px white;
     transform: scale(1.1);
     transition: transform 0.2s ease, box-shadow 1s ease, background-color 0.2s ease;
+}
+
+#breve{
+    margin: 0 5rem 2rem 5rem;
+}
+
+.place-language {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.font-icon {
+    font-family: "Space Grotesk", sans-serif;
+    color: #575757;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: left;
+}
+
+.icon-language {
+    height: 1.3rem;
+    padding-right: 0.5rem;
+}
+
+#frontend {
+    margin: 0 5em;
+}
+
+#backend {
+    margin: 0 5em;
+}
+
+#ferramentas {
+    margin: 0 5em;
+}
+
+#frontend h2 {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 1rem 0;
+}
+
+#backend h2 {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 1rem 0;
+}
+
+#ferramentas h2 {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 1rem 0;
+}
+
+/* Icones Languages */
+
+#css {
+    transition: 0.2s ease;
+}
+
+#css:hover {
+    transform: scale(1.1);
+}
+
+#node {
+    filter: drop-shadow(0 0 0.75rem #47b280);
 }
 
 /* Footer */
@@ -379,17 +420,121 @@ footer .social:hover {
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (max-width: 1570px) {
     header #itens .item {
         padding: 0.5rem 1.5rem;
     }
 
-    #foto {
-        height: 30rem;
+    #txts {
+        margin: 0 2rem;
+        flex: 1;
+        transition: 0.2s ease;
     }
+
+    .place-language p {
+        color: #575757;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .icon-language {
+        height: 1.3rem;
+        padding-right: 0.5rem;
+    }
+
+    #frontend {
+        margin: 0 2em;
+    }
+
+    #backend {
+        margin: 0 2em;
+    }
+
+    #ferramentas {
+        margin: 0 2em;
+    }
+
+    #frontend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 0.3rem 0;
+    }
+
+    #backend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 0.3rem 0;
+    }
+
+    #ferramentas h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 0.3rem 0;
+    }
+
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1280px) {
+    header #itens .item {
+        padding: 0.5rem 1.5rem;
+    }
+
+    #txts {
+        margin: 0 2rem;
+        flex: 1;
+        transition: 0.2s ease;
+    }
+
+    .place-language p {
+        color: #575757;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .icon-language {
+        height: 1.3rem;
+        padding-right: 0.5rem;
+    }
+
+    #frontend {
+        margin: 0 1em;
+    }
+
+    #backend {
+        margin: 0 1em;
+    }
+
+    #ferramentas {
+        margin: 0 1em;
+    }
+
+    #frontend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #backend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #ferramentas h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
     #sec1 {
         flex-direction: column;
         align-items: center;
@@ -410,8 +555,16 @@ footer .social:hover {
         padding: 0;
     }
 
-    #foto {
-        height: 25rem;
+    #frontend {
+        margin: 0 0.3em;
+    }
+
+    #backend {
+        margin: 0 0.3em;
+    }
+
+    #ferramentas {
+        margin: 0 0.3em;
     }
 
     #txts {
@@ -455,13 +608,40 @@ footer .social:hover {
         box-shadow: none;
     }
 
-    #foto {
-        height: 20rem;
-    }
-
     #txts {
         margin: 1rem;
         text-align: center;
+    }
+
+    .place-language p {
+        color: #000000;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    #frontend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #backend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #ferramentas h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    .icon-language {
+        height: 1.3rem;
+        padding-right: 0.5rem;
     }
 
     #rede {
@@ -478,10 +658,6 @@ footer .social:hover {
 }
 
 @media screen and (max-width: 480px) {
-    #foto {
-        max-width: 10rem;
-        max-height: 10rem;
-    }
 
     #info {
         display: flex;
@@ -552,5 +728,23 @@ footer .social:hover {
         justify-content: space-between;
         align-items: center;
         height: auto;
+    }
+
+    #frontend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #backend h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
+    }
+
+    #ferramentas h2 {
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        margin: 1rem 0;
     }
 }
