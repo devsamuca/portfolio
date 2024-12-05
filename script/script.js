@@ -307,6 +307,8 @@ $idioma.addEventListener('mouseout', () => {
 })
 
 // languages
+
+// CSS
 let css = document.getElementById('css')
 css.addEventListener('mouseenter', ()=>{
     document.getElementById('cssicon').src = 'img/language/css.png'
@@ -315,6 +317,177 @@ css.addEventListener('mouseenter', ()=>{
 css.addEventListener('mouseout', ()=>{
     document.getElementById('cssicon').src = 'img/language/cssblack.png'
 })
+
+// HTML
+let html = document.getElementById('html')
+html.addEventListener('mouseenter', ()=>{
+    document.getElementById('htmlicon').src = 'img/language/html.png'
+})
+
+html.addEventListener('mouseout', ()=>{
+    document.getElementById('htmlicon').src = 'img/language/htmlblack.png'
+})
+
+// React
+let react = document.getElementById('react')
+react.addEventListener('mouseenter', ()=>{
+    document.getElementById('reacticon').src = 'img/language/React-icon.svg.png'
+})
+
+react.addEventListener('mouseout', ()=>{
+    document.getElementById('reacticon').src = 'img/language/React-iconblack.png'
+})
+
+// Bootstrap
+let bootstrap = document.getElementById('bootstrap')
+bootstrap.addEventListener('mouseenter', ()=>{
+    document.getElementById('bootstrapicon').src = 'img/language/bootstrap-logo-shadow.png'
+})
+
+bootstrap.addEventListener('mouseout', ()=>{
+    document.getElementById('bootstrapicon').src = 'img/language/bootstrap-logo-shadowblack.png'
+})
+
+// JS
+let js = document.getElementById('javascript')
+javascript.addEventListener('mouseenter', ()=>{
+    document.getElementById('javascripticon').src = 'img/language/js.png'
+})
+
+javascript.addEventListener('mouseout', ()=>{
+    document.getElementById('javascripticon').src = 'img/language/jsblack.png'
+})
+
+// TS
+let ts = document.getElementById('typescript')
+typescript.addEventListener('mouseenter', ()=>{
+    document.getElementById('typescripticon').src = 'img/language/typescript.png'
+})
+
+typescript.addEventListener('mouseout', ()=>{
+    document.getElementById('typescripticon').src = 'img/language/typescriptblack.png'
+})
+
+// Java
+let java = document.getElementById('java')
+java.addEventListener('mouseenter', ()=>{
+    document.getElementById('javaicon').src = 'img/language/java.png'
+})
+
+java.addEventListener('mouseout', ()=>{
+    document.getElementById('javaicon').src = 'img/language/javablack.png'
+})
+
+// Mysql
+let mysql = document.getElementById('mysql')
+mysql.addEventListener('mouseenter', ()=>{
+    document.getElementById('mysqlicon').src = 'img/language/mysql-icon-1024x1005-bwcli6ob.png'
+})
+
+mysql.addEventListener('mouseout', ()=>{
+    document.getElementById('mysqlicon').src = 'img/language/mysql-icon-1024x1005-bwcli6obblack.png'
+})
+
+// Django
+let django = document.getElementById('django')
+django.addEventListener('mouseenter', ()=>{
+    document.getElementById('djangoicon').src = 'img/language/django-icon-1606x2048-lwmw1z73.png'
+})
+
+django.addEventListener('mouseout', ()=>{
+    document.getElementById('djangoicon').src = 'img/language/django-icon-1606x2048-lwmw1z73black.png'
+})
+
+// Python
+let python = document.getElementById('python')
+python.addEventListener('mouseenter', ()=>{
+    document.getElementById('pythonicon').src = 'img/language/python.png'
+})
+
+python.addEventListener('mouseout', ()=>{
+    document.getElementById('pythonicon').src = 'img/language/pythonblack.png'
+})
+
+// PostGre
+let postgre = document.getElementById('postgre')
+postgre.addEventListener('mouseenter', ()=>{
+    document.getElementById('postgreicon').src = 'img/language/png-transparent-postgresql-plain-logo-icon.png'
+})
+
+postgre.addEventListener('mouseout', ()=>{
+    document.getElementById('postgreicon').src = 'img/language/png-transparent-postgresql-plain-logo-iconblack.png'
+})
+
+// Node
+let node = document.getElementById('node')
+node.addEventListener('mouseenter', ()=>{
+    document.getElementById('nodeicon').src = 'img/language/node-js.png'
+})
+
+node.addEventListener('mouseout', ()=>{
+    document.getElementById('nodeicon').src = 'img/language/node-jsblack.png'
+})
+
+// Git
+let git = document.getElementById('git')
+git.addEventListener('mouseenter', ()=>{
+    document.getElementById('giticon').src = 'img/language/git.png'
+})
+
+git.addEventListener('mouseout', ()=>{
+    document.getElementById('giticon').src = 'img/language/gitblack.png'
+})
+
+// Npm
+let npm = document.getElementById('npm')
+npm.addEventListener('mouseenter', ()=>{
+    document.getElementById('npmicon').src = 'img/language/npm.png'
+})
+
+npm.addEventListener('mouseout', ()=>{
+    document.getElementById('npmicon').src = 'img/language/npmblack.png'
+})
+
+// Vegas
+let vegas = document.getElementById('vegas')
+vegas.addEventListener('mouseenter', ()=>{
+    document.getElementById('vegasicon').src = 'img/language/Vegas_Pro_19.svg.png'
+})
+
+vegas.addEventListener('mouseout', ()=>{
+    document.getElementById('vegasicon').src = 'img/language/Vegas_Pro_19.svgblack.png'
+})
+
+// Github
+let githubicon = document.getElementById('github')
+githubicon.addEventListener('mouseenter', ()=>{
+    document.getElementById('githubicon').src = 'img/language/github.png'
+})
+
+githubicon.addEventListener('mouseout', ()=>{
+    document.getElementById('githubicon').src = 'img/language/githublack.png'
+})
+
+// Vscode
+let vscode = document.getElementById('vscode')
+vscode.addEventListener('mouseenter', ()=>{
+    document.getElementById('vscodeicon').src = 'img/language/vscode.png'
+})
+
+vscode.addEventListener('mouseout', ()=>{
+    document.getElementById('vscodeicon').src = 'img/language/vscodeblack.png'
+})
+
+// Photoshop
+let photoshop = document.getElementById('photoshop')
+photoshop.addEventListener('mouseenter', ()=>{
+    document.getElementById('photoshopicon').src = 'img/language/adobe-photoshop-logo-2.png'
+})
+
+photoshop.addEventListener('mouseout', ()=>{
+    document.getElementById('photoshopicon').src = 'img/language/adobe-photoshop-logo-2black.png'
+})
+
 
 $idioma.addEventListener('click', () => {
 

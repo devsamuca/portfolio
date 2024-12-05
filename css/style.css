@@ -392,9 +392,142 @@ h2 {
     transform: scale(1.1);
 }
 
-#node {
-    filter: drop-shadow(0 0 0.75rem #47b280);
+#html{
+    transition: 0.2s ease;
 }
+
+#html:hover{
+    transform: scale(1.1);
+}
+
+#react{
+    transition: 0.2s ease;
+}
+
+#react:hover{
+    transform: scale(1.1);
+}
+
+#bootstrap{
+    transition: 0.2s ease;
+}
+
+#bootstrap:hover{
+    transform: scale(1.1);
+}
+
+#javascript{
+    transition: 0.2s ease;
+}
+
+#javascript:hover{
+    transform: scale(1.1);
+}
+
+#typescript{
+    transition: 0.2s ease;
+}
+
+#typescript:hover{
+    transform: scale(1.1);
+}
+
+#java{
+    transition: 0.2s ease;
+}
+
+#java:hover{
+    transform: scale(1.1);
+}
+
+#mysql{
+    transition: 0.2s ease;
+}
+
+#mysql:hover{
+    transform: scale(1.1);
+}
+
+#django{
+    transition: 0.2s ease;
+}
+
+#django:hover{
+    transform: scale(1.1);
+}
+
+#python{
+    transition: 0.2s ease;
+}
+
+#python:hover{
+    transform: scale(1.1);
+}
+
+#postgre{
+    transition: 0.2s ease;
+}
+
+#postgre:hover{
+    transform: scale(1.1);
+}
+
+#node{
+    transition: 0.2s ease;
+}
+
+#node:hover{
+    transform: scale(1.1);
+}
+
+#git{
+    transition: 0.2s ease;
+}
+
+#git:hover{
+    transform: scale(1.1);
+}
+
+#npm{
+    transition: 0.2s ease;
+}
+
+#npm:hover{
+    transform: scale(1.1);
+}
+
+#vegas{
+    transition: 0.2s ease;
+}
+
+#vegas:hover{
+    transform: scale(1.1);
+}
+
+#github{
+    transition: 0.2s ease;
+}
+
+#github:hover{
+    transform: scale(1.1);
+}
+
+#vscode{
+    transition: 0.2s ease;
+}
+
+#vscode:hover{
+    transform: scale(1.1);
+}
+
+#photoshop{
+    transition: 0.2s ease;
+}
+
+#photoshop:hover{
+    transform: scale(1.1);
+}
+
 
 /* Footer */
 footer {
