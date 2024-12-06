@@ -504,11 +504,11 @@ h2 {
     transform: scale(1.1);
 }
 
-#github{
+#githubb{
     transition: 0.2s ease;
 }
 
-#github:hover{
+#githubb:hover{
     transform: scale(1.1);
 }
 

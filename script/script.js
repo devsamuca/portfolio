@@ -310,183 +310,393 @@ $idioma.addEventListener('mouseout', () => {
 
 // CSS
 let css = document.getElementById('css')
-css.addEventListener('mouseenter', ()=>{
-    document.getElementById('cssicon').src = 'img/language/css.png'
-})
+let imgcss = document.getElementById('cssicon')
+let txtcss = document.getElementById('txtcss')
 
-css.addEventListener('mouseout', ()=>{
+function mudacss() {
+    imgcss.src = 'img/language/css.png'
+}
+
+function voltacss() {
     document.getElementById('cssicon').src = 'img/language/cssblack.png'
-})
+}
+
+txtcss.addEventListener('mouseenter', mudacss)
+txtcss.addEventListener('mouseout', voltacss)
+
+imgcss.addEventListener('mouseenter', mudacss)
+imgcss.addEventListener('mouseout', voltacss)
+
+css.addEventListener('mouseenter', mudacss)
+css.addEventListener('mouseout', voltacss)
 
 // HTML
-let html = document.getElementById('html')
-html.addEventListener('mouseenter', ()=>{
-    document.getElementById('htmlicon').src = 'img/language/html.png'
-})
+let html = document.getElementById('html');
+let imghtml = document.getElementById('htmlicon');
+let txthtml = document.getElementById('txthtml');
 
-html.addEventListener('mouseout', ()=>{
-    document.getElementById('htmlicon').src = 'img/language/htmlblack.png'
-})
+function mudahtml() {
+    imghtml.src = 'img/language/html.png';
+}
+
+function voltahtml() {
+    imghtml.src = 'img/language/htmlblack.png';
+}
+
+txthtml.addEventListener('mouseenter', mudahtml);
+txthtml.addEventListener('mouseout', voltahtml);
+
+imghtml.addEventListener('mouseenter', mudahtml);
+imghtml.addEventListener('mouseout', voltahtml);
+
+html.addEventListener('mouseenter', mudahtml);
+html.addEventListener('mouseout', voltahtml);
+
 
 // React
-let react = document.getElementById('react')
-react.addEventListener('mouseenter', ()=>{
-    document.getElementById('reacticon').src = 'img/language/React-icon.svg.png'
-})
+let react = document.getElementById('react');
+let imgreact = document.getElementById('reacticon');
+let txtreact = document.getElementById('txtreact');
 
-react.addEventListener('mouseout', ()=>{
-    document.getElementById('reacticon').src = 'img/language/React-iconblack.png'
-})
+function mudareact() {
+    imgreact.src = 'img/language/React-icon.svg.png';
+}
+
+function voltareact() {
+    imgreact.src = 'img/language/React-iconblack.png';
+}
+
+txtreact.addEventListener('mouseenter', mudareact);
+txtreact.addEventListener('mouseout', voltareact);
+
+imgreact.addEventListener('mouseenter', mudareact);
+imgreact.addEventListener('mouseout', voltareact);
+
+react.addEventListener('mouseenter', mudareact);
+react.addEventListener('mouseout', voltareact);
+
 
 // Bootstrap
-let bootstrap = document.getElementById('bootstrap')
-bootstrap.addEventListener('mouseenter', ()=>{
-    document.getElementById('bootstrapicon').src = 'img/language/bootstrap-logo-shadow.png'
-})
+let bootstrap = document.getElementById('bootstrap');
+let imgbootstrap = document.getElementById('bootstrapicon');
+let txtbootstrap = document.getElementById('txtbootstrap');
 
-bootstrap.addEventListener('mouseout', ()=>{
-    document.getElementById('bootstrapicon').src = 'img/language/bootstrap-logo-shadowblack.png'
-})
+function mudabootstrap() {
+    imgbootstrap.src = 'img/language/bootstrap-logo-shadow.png';
+}
 
-// JS
-let js = document.getElementById('javascript')
-javascript.addEventListener('mouseenter', ()=>{
-    document.getElementById('javascripticon').src = 'img/language/js.png'
-})
+function voltabootstrap() {
+    imgbootstrap.src = 'img/language/bootstrap-logo-shadowblack.png';
+}
 
-javascript.addEventListener('mouseout', ()=>{
-    document.getElementById('javascripticon').src = 'img/language/jsblack.png'
-})
+txtbootstrap.addEventListener('mouseenter', mudabootstrap);
+txtbootstrap.addEventListener('mouseout', voltabootstrap);
 
-// TS
-let ts = document.getElementById('typescript')
-typescript.addEventListener('mouseenter', ()=>{
-    document.getElementById('typescripticon').src = 'img/language/typescript.png'
-})
+imgbootstrap.addEventListener('mouseenter', mudabootstrap);
+imgbootstrap.addEventListener('mouseout', voltabootstrap);
 
-typescript.addEventListener('mouseout', ()=>{
-    document.getElementById('typescripticon').src = 'img/language/typescriptblack.png'
-})
+bootstrap.addEventListener('mouseenter', mudabootstrap);
+bootstrap.addEventListener('mouseout', voltabootstrap);
+
+
+// JavaScript
+let javascript = document.getElementById('javascript');
+let imgjavascript = document.getElementById('javascripticon');
+let txtjavascript = document.getElementById('txtjs');
+
+function mudajavascript() {
+    imgjavascript.src = 'img/language/js.png';
+}
+
+function voltajavascript() {
+    imgjavascript.src = 'img/language/jsblack.png';
+}
+
+txtjavascript.addEventListener('mouseenter', mudajavascript);
+txtjavascript.addEventListener('mouseout', voltajavascript);
+
+imgjavascript.addEventListener('mouseenter', mudajavascript);
+imgjavascript.addEventListener('mouseout', voltajavascript);
+
+javascript.addEventListener('mouseenter', mudajavascript);
+javascript.addEventListener('mouseout', voltajavascript);
+
+
+// TypeScript
+let typescript = document.getElementById('typescript');
+let imgtypescript = document.getElementById('typescripticon');
+let txttypescript = document.getElementById('txtts');
+
+function mudatypescript() {
+    imgtypescript.src = 'img/language/typescript.png';
+}
+
+function voltatypescript() {
+    imgtypescript.src = 'img/language/typescriptblack.png';
+}
+
+txttypescript.addEventListener('mouseenter', mudatypescript);
+txttypescript.addEventListener('mouseout', voltatypescript);
+
+imgtypescript.addEventListener('mouseenter', mudatypescript);
+imgtypescript.addEventListener('mouseout', voltatypescript);
+
+typescript.addEventListener('mouseenter', mudatypescript);
+typescript.addEventListener('mouseout', voltatypescript);
+
 
 // Java
-let java = document.getElementById('java')
-java.addEventListener('mouseenter', ()=>{
-    document.getElementById('javaicon').src = 'img/language/java.png'
-})
+let java = document.getElementById('java');
+let imgjava = document.getElementById('javaicon');
+let txtjava = document.getElementById('txtjava');
 
-java.addEventListener('mouseout', ()=>{
-    document.getElementById('javaicon').src = 'img/language/javablack.png'
-})
+function mudajava() {
+    imgjava.src = 'img/language/java.png';
+}
 
-// Mysql
-let mysql = document.getElementById('mysql')
-mysql.addEventListener('mouseenter', ()=>{
-    document.getElementById('mysqlicon').src = 'img/language/mysql-icon-1024x1005-bwcli6ob.png'
-})
+function voltajava() {
+    imgjava.src = 'img/language/javablack.png';
+}
 
-mysql.addEventListener('mouseout', ()=>{
-    document.getElementById('mysqlicon').src = 'img/language/mysql-icon-1024x1005-bwcli6obblack.png'
-})
+txtjava.addEventListener('mouseenter', mudajava);
+txtjava.addEventListener('mouseout', voltajava);
+
+imgjava.addEventListener('mouseenter', mudajava);
+imgjava.addEventListener('mouseout', voltajava);
+
+java.addEventListener('mouseenter', mudajava);
+java.addEventListener('mouseout', voltajava);
+
+
+// MySQL
+let mysql = document.getElementById('mysql');
+let imgmysql = document.getElementById('mysqlicon');
+let txtmysql = document.getElementById('txtmysql');
+
+function mudamysql() {
+    imgmysql.src = 'img/language/mysql-icon-1024x1005-bwcli6ob.png';
+}
+
+function voltamysql() {
+    imgmysql.src = 'img/language/mysql-icon-1024x1005-bwcli6obblack.png';
+}
+
+txtmysql.addEventListener('mouseenter', mudamysql);
+txtmysql.addEventListener('mouseout', voltamysql);
+
+imgmysql.addEventListener('mouseenter', mudamysql);
+imgmysql.addEventListener('mouseout', voltamysql);
+
+mysql.addEventListener('mouseenter', mudamysql);
+mysql.addEventListener('mouseout', voltamysql);
+
 
 // Django
-let django = document.getElementById('django')
-django.addEventListener('mouseenter', ()=>{
-    document.getElementById('djangoicon').src = 'img/language/django-icon-1606x2048-lwmw1z73.png'
-})
+let django = document.getElementById('django');
+let imgdjango = document.getElementById('djangoicon');
+let txtdjango = document.getElementById('txtdjango');
 
-django.addEventListener('mouseout', ()=>{
-    document.getElementById('djangoicon').src = 'img/language/django-icon-1606x2048-lwmw1z73black.png'
-})
+function mudadjango() {
+    imgdjango.src = 'img/language/django-icon-1606x2048-lwmw1z73.png';
+}
+
+function voltadjango() {
+    imgdjango.src = 'img/language/django-icon-1606x2048-lwmw1z73black.png';
+}
+
+txtdjango.addEventListener('mouseenter', mudadjango);
+txtdjango.addEventListener('mouseout', voltadjango);
+
+imgdjango.addEventListener('mouseenter', mudadjango);
+imgdjango.addEventListener('mouseout', voltadjango);
+
+django.addEventListener('mouseenter', mudadjango);
+django.addEventListener('mouseout', voltadjango);
+
 
 // Python
-let python = document.getElementById('python')
-python.addEventListener('mouseenter', ()=>{
-    document.getElementById('pythonicon').src = 'img/language/python.png'
-})
+let python = document.getElementById('python');
+let imgpython = document.getElementById('pythonicon');
+let txtpython = document.getElementById('txtpython');
 
-python.addEventListener('mouseout', ()=>{
-    document.getElementById('pythonicon').src = 'img/language/pythonblack.png'
-})
+function mudapython() {
+    imgpython.src = 'img/language/python.png';
+}
+
+function voltapython() {
+    imgpython.src = 'img/language/pythonblack.png';
+}
+
+txtpython.addEventListener('mouseenter', mudapython);
+txtpython.addEventListener('mouseout', voltapython);
+
+imgpython.addEventListener('mouseenter', mudapython);
+imgpython.addEventListener('mouseout', voltapython);
+
+python.addEventListener('mouseenter', mudapython);
+python.addEventListener('mouseout', voltapython);
+
 
 // PostGre
-let postgre = document.getElementById('postgre')
-postgre.addEventListener('mouseenter', ()=>{
-    document.getElementById('postgreicon').src = 'img/language/png-transparent-postgresql-plain-logo-icon.png'
-})
+let postgre = document.getElementById('postgre');
+let imgpostgre = document.getElementById('postgreicon');
+let txtpostgre = document.getElementById('txtpostgre');
 
-postgre.addEventListener('mouseout', ()=>{
-    document.getElementById('postgreicon').src = 'img/language/png-transparent-postgresql-plain-logo-iconblack.png'
-})
+function mudapostgre() {
+    imgpostgre.src = 'img/language/png-transparent-postgresql-plain-logo-icon.png';
+}
+
+function voltapostgre() {
+    imgpostgre.src = 'img/language/png-transparent-postgresql-plain-logo-iconblack.png';
+}
+
+txtpostgre.addEventListener('mouseenter', mudapostgre);
+txtpostgre.addEventListener('mouseout', voltapostgre);
+
+imgpostgre.addEventListener('mouseenter', mudapostgre);
+imgpostgre.addEventListener('mouseout', voltapostgre);
+
+postgre.addEventListener('mouseenter', mudapostgre);
+postgre.addEventListener('mouseout', voltapostgre);
+
 
 // Node
-let node = document.getElementById('node')
-node.addEventListener('mouseenter', ()=>{
-    document.getElementById('nodeicon').src = 'img/language/node-js.png'
-})
+let node = document.getElementById('node');
+let imgnode = document.getElementById('nodeicon');
+let txtnode = document.getElementById('txtnode');
 
-node.addEventListener('mouseout', ()=>{
-    document.getElementById('nodeicon').src = 'img/language/node-jsblack.png'
-})
+function mudanode() {
+    imgnode.src = 'img/language/node-js.png';
+}
+
+function voltanode() {
+    imgnode.src = 'img/language/node-jsblack.png';
+}
+
+txtnode.addEventListener('mouseenter', mudanode);
+txtnode.addEventListener('mouseout', voltanode);
+
+imgnode.addEventListener('mouseenter', mudanode);
+imgnode.addEventListener('mouseout', voltanode);
+
+node.addEventListener('mouseenter', mudanode);
+node.addEventListener('mouseout', voltanode);
+
 
 // Git
-let git = document.getElementById('git')
-git.addEventListener('mouseenter', ()=>{
-    document.getElementById('giticon').src = 'img/language/git.png'
-})
+let git = document.getElementById('git');
+let imggit = document.getElementById('giticon');
+let txtgit = document.getElementById('txtgit');
 
-git.addEventListener('mouseout', ()=>{
-    document.getElementById('giticon').src = 'img/language/gitblack.png'
-})
+function mudagit() {
+    imggit.src = 'img/language/git.png';
+}
+
+function voltagit() {
+    imggit.src = 'img/language/gitblack.png';
+}
+
+txtgit.addEventListener('mouseenter', mudagit);
+txtgit.addEventListener('mouseout', voltagit);
+
+imggit.addEventListener('mouseenter', mudagit);
+imggit.addEventListener('mouseout', voltagit);
+
+git.addEventListener('mouseenter', mudagit);
+git.addEventListener('mouseout', voltagit);
+
 
 // Npm
-let npm = document.getElementById('npm')
-npm.addEventListener('mouseenter', ()=>{
-    document.getElementById('npmicon').src = 'img/language/npm.png'
-})
+let npm = document.getElementById('npm');
+let imgnpm = document.getElementById('npmicon');
+let txtnpm = document.getElementById('txtnpm');
 
-npm.addEventListener('mouseout', ()=>{
-    document.getElementById('npmicon').src = 'img/language/npmblack.png'
-})
+function mudanpm() {
+    imgnpm.src = 'img/language/npm.png';
+}
+
+function voltanpm() {
+    imgnpm.src = 'img/language/npmblack.png';
+}
+
+txtnpm.addEventListener('mouseenter', mudanpm);
+txtnpm.addEventListener('mouseout', voltanpm);
+
+imgnpm.addEventListener('mouseenter', mudanpm);
+imgnpm.addEventListener('mouseout', voltanpm);
+
+npm.addEventListener('mouseenter', mudanpm);
+npm.addEventListener('mouseout', voltanpm);
+
 
 // Vegas
-let vegas = document.getElementById('vegas')
-vegas.addEventListener('mouseenter', ()=>{
-    document.getElementById('vegasicon').src = 'img/language/Vegas_Pro_19.svg.png'
-})
+let vegas = document.getElementById('vegas');
+let imgvegas = document.getElementById('vegasicon');
+let txtvegas = document.getElementById('txtvegas');
 
-vegas.addEventListener('mouseout', ()=>{
-    document.getElementById('vegasicon').src = 'img/language/Vegas_Pro_19.svgblack.png'
-})
+function mudavegas() {
+    imgvegas.src = 'img/language/Vegas_Pro_19.svg.png';
+}
 
-// Github
-let githubicon = document.getElementById('github')
-githubicon.addEventListener('mouseenter', ()=>{
-    document.getElementById('githubicon').src = 'img/language/github.png'
-})
+function voltavegas() {
+    imgvegas.src = 'img/language/Vegas_Pro_19.svgblack.png';
+}
 
-githubicon.addEventListener('mouseout', ()=>{
-    document.getElementById('githubicon').src = 'img/language/githublack.png'
-})
+txtvegas.addEventListener('mouseenter', mudavegas);
+txtvegas.addEventListener('mouseout', voltavegas);
+
+imgvegas.addEventListener('mouseenter', mudavegas);
+imgvegas.addEventListener('mouseout', voltavegas);
+
+vegas.addEventListener('mouseenter', mudavegas);
+vegas.addEventListener('mouseout', voltavegas);
+
 
 // Vscode
-let vscode = document.getElementById('vscode')
-vscode.addEventListener('mouseenter', ()=>{
-    document.getElementById('vscodeicon').src = 'img/language/vscode.png'
-})
+let vscode = document.getElementById('vscode');
+let imgvscode = document.getElementById('vscodeicon');
+let txtvscode = document.getElementById('txtvscode');
 
-vscode.addEventListener('mouseout', ()=>{
-    document.getElementById('vscodeicon').src = 'img/language/vscodeblack.png'
-})
+function mudavscode() {
+    imgvscode.src = 'img/language/vscode.png';
+}
+
+function voltavscode() {
+    imgvscode.src = 'img/language/vscodeblack.png';
+}
+
+txtvscode.addEventListener('mouseenter', mudavscode);
+txtvscode.addEventListener('mouseout', voltavscode);
+
+imgvscode.addEventListener('mouseenter', mudavscode);
+imgvscode.addEventListener('mouseout', voltavscode);
+
+vscode.addEventListener('mouseenter', mudavscode);
+vscode.addEventListener('mouseout', voltavscode);
+
 
 // Photoshop
-let photoshop = document.getElementById('photoshop')
-photoshop.addEventListener('mouseenter', ()=>{
-    document.getElementById('photoshopicon').src = 'img/language/adobe-photoshop-logo-2.png'
-})
+let photoshop = document.getElementById('photoshop');
+let imgphotoshop = document.getElementById('photoshopicon');
+let txtphotoshop = document.getElementById('txtphotoshop');
 
-photoshop.addEventListener('mouseout', ()=>{
-    document.getElementById('photoshopicon').src = 'img/language/adobe-photoshop-logo-2black.png'
-})
+function mudaphotoshop() {
+    imgphotoshop.src = 'img/language/adobe-photoshop-logo-2.png';
+}
+
+function voltaphotoshop() {
+    imgphotoshop.src = 'img/language/adobe-photoshop-logo-2black.png';
+}
+
+txtphotoshop.addEventListener('mouseenter', mudaphotoshop);
+txtphotoshop.addEventListener('mouseout', voltaphotoshop);
+
+imgphotoshop.addEventListener('mouseenter', mudaphotoshop);
+imgphotoshop.addEventListener('mouseout', voltaphotoshop);
+
+photoshop.addEventListener('mouseenter', mudaphotoshop);
+photoshop.addEventListener('mouseout', voltaphotoshop);
+
 
 
 $idioma.addEventListener('click', () => {
@@ -536,6 +746,12 @@ $idioma.addEventListener('click', () => {
         document.getElementById('footertext').innerText = '@Copyright 2024 | Developed by Samuel Souza.'
         document.getElementById('footertext').classList.add('mudaidioma')
 
+        document.getElementById('tecfer').innerText = 'Technologies and Tools'
+        document.getElementById('tecfer').classList.add('mudaidioma')
+
+        document.getElementById('breve').innerText = 'These are the technologies and tools that I use in my daily life to carry out my activities, work and projects.'
+        document.getElementById('breve').classList.add('mudaidioma')
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -550,6 +766,8 @@ $idioma.addEventListener('click', () => {
             document.getElementById('ptrofeu').classList.remove('mudaidioma')
             document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
             document.getElementById('footertext').classList.remove('mudaidioma')
+            document.getElementById('tecfer').classList.remove('mudaidioma')
+            document.getElementById('breve').classList.remove('mudaidioma')
         }, 2000)
 
     } else if ($icon.src.includes('estados-unidos.png')) {
@@ -598,6 +816,12 @@ $idioma.addEventListener('click', () => {
         document.getElementById('footertext').innerText = '@Droit d`auteur 2024 | Développé par Samuel Souza.'
         document.getElementById('footertext').classList.add('mudaidioma')
 
+        document.getElementById('tecfer').innerText = 'Technologies et Outils'
+        document.getElementById('tecfer').classList.add('mudaidioma')
+
+        document.getElementById('breve').innerText = 'Ce sont les technologies et les outils que j`utilise dans ma vie quotidienne pour réaliser mes activités, mes travaux et mes projets.'
+        document.getElementById('breve').classList.add('mudaidioma')
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -612,6 +836,8 @@ $idioma.addEventListener('click', () => {
             document.getElementById('ptrofeu').classList.remove('mudaidioma')
             document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
             document.getElementById('footertext').classList.remove('mudaidioma')
+            document.getElementById('tecfer').classList.remove('mudaidioma')
+            document.getElementById('breve').classList.remove('mudaidioma')
         }, 2000)
 
 
@@ -660,6 +886,12 @@ $idioma.addEventListener('click', () => {
 
         document.getElementById('footertext').innerText = '@Copyright 2024 | Desenvolvido por Samuel Souza.'
         document.getElementById('footertext').classList.add('mudaidioma')
+
+        document.getElementById('tecfer').innerText = 'Tecnologías y herramientas'
+        document.getElementById('tecfer').classList.add('mudaidioma')
+
+        document.getElementById('breve').innerText = 'Estas son las tecnologías y herramientas que utilizo en mi vida diaria para realizar mis actividades, trabajos y proyectos.'
+        document.getElementById('breve').classList.add('mudaidioma')
 
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
@@ -719,8 +951,14 @@ $idioma.addEventListener('click', () => {
         document.getElementById('ptxttrofeu').innerText = 'Boxe | No Gi | MMA'
         document.getElementById('ptxttrofeu').classList.add('mudaidioma')
 
-        document.getElementById('footertext').innerText = '@Derechos de autor 2024 | Desenvolvido por Samuel Souza.'
+        document.getElementById('footertext').innerText = '@Copyright | Desenvolvido por Samuel Souza.'
         document.getElementById('footertext').classList.add('mudaidioma')
+
+        document.getElementById('tecfer').innerText = ' Tecnologias e Ferramentas'
+        document.getElementById('tecfer').classList.add('mudaidioma')
+
+        document.getElementById('breve').innerText = 'Essas são as tecnologias e ferramentas que eu utilizo em meu dia a dia para a realização das minhas atividades, trabalhos e projetos.'
+        document.getElementById('breve').classList.add('mudaidioma')
 
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
