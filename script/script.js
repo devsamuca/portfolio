@@ -752,6 +752,10 @@ $idioma.addEventListener('click', () => {
         document.getElementById('breve').innerText = 'These are the technologies and tools that I use in my daily life to carry out my activities, work and projects.'
         document.getElementById('breve').classList.add('mudaidioma')
 
+        document.getElementById('ferramentastxt').innerText = 'Tools'
+        document.getElementById('ferramentastxt').classList.add('mudaidioma')
+        
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -768,6 +772,8 @@ $idioma.addEventListener('click', () => {
             document.getElementById('footertext').classList.remove('mudaidioma')
             document.getElementById('tecfer').classList.remove('mudaidioma')
             document.getElementById('breve').classList.remove('mudaidioma')
+            document.getElementById('ferramentastxt').classList.remove('mudaidioma')
+            
         }, 2000)
 
     } else if ($icon.src.includes('estados-unidos.png')) {
@@ -822,6 +828,11 @@ $idioma.addEventListener('click', () => {
         document.getElementById('breve').innerText = 'Ce sont les technologies et les outils que j`utilise dans ma vie quotidienne pour réaliser mes activités, mes travaux et mes projets.'
         document.getElementById('breve').classList.add('mudaidioma')
 
+
+        document.getElementById('ferramentastxt').innerText = 'Outils'
+        document.getElementById('ferramentastxt').classList.add('mudaidioma')
+        
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -838,6 +849,8 @@ $idioma.addEventListener('click', () => {
             document.getElementById('footertext').classList.remove('mudaidioma')
             document.getElementById('tecfer').classList.remove('mudaidioma')
             document.getElementById('breve').classList.remove('mudaidioma')
+            document.getElementById('ferramentastxt').classList.remove('mudaidioma')
+            
         }, 2000)
 
 
@@ -893,6 +906,10 @@ $idioma.addEventListener('click', () => {
         document.getElementById('breve').innerText = 'Estas son las tecnologías y herramientas que utilizo en mi vida diaria para realizar mis actividades, trabajos y proyectos.'
         document.getElementById('breve').classList.add('mudaidioma')
 
+        document.getElementById('ferramentastxt').innerText = 'Herramientas'
+        document.getElementById('ferramentastxt').classList.add('mudaidioma')
+        
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -907,6 +924,10 @@ $idioma.addEventListener('click', () => {
             document.getElementById('ptrofeu').classList.remove('mudaidioma')
             document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
             document.getElementById('footertext').classList.remove('mudaidioma')
+            document.getElementById('tecfer').classList.remove('mudaidioma')
+            document.getElementById('breve').classList.remove('mudaidioma')
+            document.getElementById('ferramentastxt').classList.remove('mudaidioma')
+            
         }, 2000)
 
     } else {
@@ -960,6 +981,10 @@ $idioma.addEventListener('click', () => {
         document.getElementById('breve').innerText = 'Essas são as tecnologias e ferramentas que eu utilizo em meu dia a dia para a realização das minhas atividades, trabalhos e projetos.'
         document.getElementById('breve').classList.add('mudaidioma')
 
+        document.getElementById('ferramentastxt').innerText = 'Ferramentas'
+        document.getElementById('ferramentastxt').classList.add('mudaidioma')
+        
+
         setTimeout(() => {
             document.getElementById('txt1').classList.remove('mudaidioma')
             document.getElementById('txt2').classList.remove('mudaidioma')
@@ -973,6 +998,10 @@ $idioma.addEventListener('click', () => {
             document.getElementById('ptrofeu').classList.remove('mudaidioma')
             document.getElementById('ptxttrofeu').classList.remove('mudaidioma')
             document.getElementById('footertext').classList.remove('mudaidioma')
+            document.getElementById('tecfer').classList.remove('mudaidioma')
+            document.getElementById('breve').classList.remove('mudaidioma')
+            document.getElementById('ferramentastxt').classList.remove('mudaidioma')
+            
         }, 2000)
 
     }
